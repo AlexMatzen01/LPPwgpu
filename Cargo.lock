@@ -725,9 +725,6 @@ dependencies = [
  "once_cell",
  "pollster",
  "raw-window-handle",
- "wasm-bindgen",
- "wasm-bindgen-futures",
- "web-sys",
  "wgpu",
  "winit",
 ]

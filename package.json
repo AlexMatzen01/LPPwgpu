@@ -8,7 +8,7 @@
     "description": "wgpu graphics package for LPPO, providing WebGPU rendering via FFI.",
     "license": "MIT",
     "repository": "https://github.com/AlexMatzen01/LPPwgpu",
-    "lppo_version": ">=0.1.0",
+    "lppo_version": ">=5.0.0",
     "dependencies": {},
     "ports": [8080],
     "build": {

@@ -70,6 +70,37 @@ WGSL shaders can be supplied two ways:
    and load them via `wgpu_create_shader_file`, passing the FNV-1a hash of the
    file path.
 
+## WebAssembly build
+
+LPPwgpu compiles to `wasm32-unknown-unknown` and runs in the browser via WebGPU.
+A pre-made `index.html` is included that loads `lppo_wgpu.wasm` and drives the
+render loop.
+
+### Build for wasm
+
+```sh
+cargo build --release --target wasm32-unknown-unknown --features wasm
+```
+
+This produces:
+
+- `target/wasm32-unknown-unknown/release/lppo_wgpu.wasm`
+- `index.html` (static web shell)
+
+### Serve
+
+```sh
+cd target/wasm32-unknown-unknown/release
+python3 -m http.server 8080
+```
+
+Then open `http://localhost:8080/index.html`.
+
+### Ports
+
+The package declares port `8080` in `package.json`. LPPO uses this when running
+packages that expose network services.
+
 ## FFI convention
 
 All exported functions follow the LPPO native calling convention:
@@ -79,7 +110,7 @@ i64 func(i64 a0, i64 a1, i64 a2, i64 a3, i64 a4, i64 a5, i64 a6, i64 a7);
 ```
 
 LPPO pads missing arguments with 0. `Str` arguments are hashed to `i64` using
-FNV-1a.
+FNV-1a (the same algorithm used in `index.html`).
 
 ## License
 

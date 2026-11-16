@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "package": {
+    "identifier": "lppwgpu",
+    "display_name": "LPPwgpu",
+    "version": "1.0.0",
+    "author": "Alexander Matzen <alex@example.com>",
+    "description": "wgpu graphics package for LPPO, providing WebGPU rendering via FFI.",
+    "license": "MIT",
+    "repository": "https://github.com/AlexMatzen01/LPPwgpu",
+    "lppo_version": ">=0.1.0",
+    "dependencies": {},
+    "ports": [8080],
+    "build": {
+      "system": "cargo",
+      "manifest": "Cargo.toml",
+      "features": [],
+      "release": true
+    }
+  }
+}

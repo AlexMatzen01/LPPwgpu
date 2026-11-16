@@ -1,0 +1,160 @@
+{
+  "functions": [
+    {
+      "name": "wgpu_init",
+      "params": [],
+      "return_type": "Int64",
+      "symbol": "wgpu_init"
+    },
+    {
+      "name": "wgpu_create_window",
+      "params": ["Int64", "Int64", "Int64"],
+      "return_type": "Int64",
+      "symbol": "wgpu_create_window"
+    },
+    {
+      "name": "wgpu_destroy_window",
+      "params": ["Int64"],
+      "return_type": "Int64",
+      "symbol": "wgpu_destroy_window"
+    },
+    {
+      "name": "wgpu_create_surface",
+      "params": ["Int64"],
+      "return_type": "Int64",
+      "symbol": "wgpu_create_surface"
+    },
+    {
+      "name": "wgpu_destroy_surface",
+      "params": ["Int64"],
+      "return_type": "Int64",
+      "symbol": "wgpu_destroy_surface"
+    },
+    {
+      "name": "wgpu_request_adapter",
+      "params": ["Int64"],
+      "return_type": "Int64",
+      "symbol": "wgpu_request_adapter"
+    },
+    {
+      "name": "wgpu_create_device",
+      "params": ["Int64"],
+      "return_type": "Int64",
+      "symbol": "wgpu_create_device"
+    },
+    {
+      "name": "wgpu_get_queue",
+      "params": ["Int64"],
+      "return_type": "Int64",
+      "symbol": "wgpu_get_queue"
+    },
+    {
+      "name": "wgpu_configure_surface",
+      "params": ["Int64", "Int64", "Int64", "Int64"],
+      "return_type": "Int64",
+      "symbol": "wgpu_configure_surface"
+    },
+    {
+      "name": "wgpu_create_shader_embedded",
+      "params": ["Int64", "Int64"],
+      "return_type": "Int64",
+      "symbol": "wgpu_create_shader_embedded"
+    },
+    {
+      "name": "wgpu_create_shader_file",
+      "params": ["Int64", "Int64"],
+      "return_type": "Int64",
+      "symbol": "wgpu_create_shader_file"
+    },
+    {
+      "name": "wgpu_create_render_pipeline",
+      "params": ["Int64", "Int64", "Int64", "Int64", "Int64", "Int64", "Int64", "Int64"],
+      "return_type": "Int64",
+      "symbol": "wgpu_create_render_pipeline"
+    },
+    {
+      "name": "wgpu_create_buffer",
+      "params": ["Int64", "Int64", "Int64"],
+      "return_type": "Int64",
+      "symbol": "wgpu_create_buffer"
+    },
+    {
+      "name": "wgpu_write_buffer",
+      "params": ["Int64", "Int64", "Int64", "Int64", "Int64", "Int64", "Int64", "Int64"],
+      "return_type": "Int64",
+      "symbol": "wgpu_write_buffer"
+    },
+    {
+      "name": "wgpu_create_texture",
+      "params": ["Int64", "Int64", "Int64", "Int64"],
+      "return_type": "Int64",
+      "symbol": "wgpu_create_texture"
+    },
+    {
+      "name": "wgpu_begin_render_pass",
+      "params": ["Int64", "Int64", "Int64", "Int64", "Int64", "Int64", "Int64", "Int64"],
+      "return_type": "Int64",
+      "symbol": "wgpu_begin_render_pass"
+    },
+    {
+      "name": "wgpu_set_pipeline",
+      "params": ["Int64"],
+      "return_type": "Int64",
+      "symbol": "wgpu_set_pipeline"
+    },
+    {
+      "name": "wgpu_set_vertex_buffer",
+      "params": ["Int64", "Int64"],
+      "return_type": "Int64",
+      "symbol": "wgpu_set_vertex_buffer"
+    },
+    {
+      "name": "wgpu_draw",
+      "params": ["Int64", "Int64", "Int64", "Int64"],
+      "return_type": "Int64",
+      "symbol": "wgpu_draw"
+    },
+    {
+      "name": "wgpu_end_render_pass",
+      "params": [],
+      "return_type": "Int64",
+      "symbol": "wgpu_end_render_pass"
+    },
+    {
+      "name": "wgpu_submit",
+      "params": ["Int64"],
+      "return_type": "Int64",
+      "symbol": "wgpu_submit"
+    },
+    {
+      "name": "wgpu_present",
+      "params": ["Int64"],
+      "return_type": "Int64",
+      "symbol": "wgpu_present"
+    },
+    {
+      "name": "wgpu_poll_events",
+      "params": ["Int64"],
+      "return_type": "Int64",
+      "symbol": "wgpu_poll_events"
+    },
+    {
+      "name": "wgpu_shader_list",
+      "params": [],
+      "return_type": "Int64",
+      "symbol": "wgpu_shader_list"
+    },
+    {
+      "name": "wgpu_shader_name",
+      "params": ["Int64"],
+      "return_type": "Int64",
+      "symbol": "wgpu_shader_name"
+    },
+    {
+      "name": "wgpu_last_error",
+      "params": [],
+      "return_type": "Int64",
+      "symbol": "wgpu_last_error"
+    }
+  ]
+}
